@@ -43,43 +43,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-//public class Main1 {
-//    public static void main(String[] args) throws IOException {
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        int n = Integer.parseInt(br.readLine());
-//        StringTokenizer st = new StringTokenizer(br.readLine());
-//        int[] a = new int[n];
-//        for (int i = 0; i < n; i++) {
-//            a[i] = Integer.parseInt(st.nextToken());
-//        }
-//
-//        long sum = 0;          // знакопеременная сумма
-//        int minOdd = Integer.MAX_VALUE;   // минимум на нечётных позициях (1,3,5,...)
-//        int maxEven = Integer.MIN_VALUE;  // максимум на чётных позициях (2,4,6,...)
-//
-//        for (int i = 0; i < n; i++) {
-//            if (i % 2 == 0) {         // нечётная позиция (индекс 0 → 1)
-//                sum += a[i];
-//                if (a[i] < minOdd) minOdd = a[i];
-//            } else {                  // чётная позиция
-//                sum -= a[i];
-//                if (a[i] > maxEven) maxEven = a[i];
-//            }
-//        }
-//
-//        long diff = (long) maxEven - minOdd;
-//        if (diff > 0) {
-//            sum += 2 * diff;          // прибавляем выигрыш от лучшего обмена
-//        }
-//
-//        System.out.println(sum);
-//    }
-//}
-
-
-import java.io.*;           // Импорт классов для ввода-вывода
-import java.util.*;         // Импорт классов для работы со структурами данных
-
 public class Main1 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // Создаём буферизованный читатель из System.in
