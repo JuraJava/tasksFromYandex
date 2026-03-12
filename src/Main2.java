@@ -76,7 +76,10 @@
  * 1.055555555555556
  */
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.Scanner;
 
 public class Main2 {
     // Состояние: позиция, грузы при себе, грузы дома
